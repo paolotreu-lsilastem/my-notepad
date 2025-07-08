@@ -50,6 +50,9 @@ public partial class Form1 : Form
         this.MainMenuStrip = menu;
         this.Controls.Add(menu);
         menu.Dock = DockStyle.Top;
+
+        // open window centered
+        this.StartPosition = FormStartPosition.CenterScreen;
     }
 
     private void NewFile(object? sender, EventArgs e)
