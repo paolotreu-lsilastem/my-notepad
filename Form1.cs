@@ -9,6 +9,7 @@ public partial class Form1 : Form
     public Form1(string? filePath = null)
     {
         InitializeComponent();
+        this.Icon = new Icon("notepad-icon.ico");
         InitializeNotepadUI();
         if (!string.IsNullOrEmpty(filePath) && File.Exists(filePath))
         {
